@@ -1,0 +1,12 @@
+<h1>Hello world!</h1>
+<app-main [label]="'Label'"></app-main>
+<p>Data: {{data | date}}</p>
+<p>Dinheiro: {{dinheiro | currency}}</p>
+<p>Pipe customizado: {{nomeCompleto | appUppercase}}</p>
+<button (click)="sayHello()">Diga olá pelo serviço</button>
+<nav>
+  <ul>
+    <li><a [routerLink]="['list']">Lista</a></li>
+  </ul>
+</nav>
+<router-outlet></router-outlet>
